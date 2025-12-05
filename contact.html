@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+
+     <!-- Navigation bar -->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Left Logo -->
+                <a class="navbar-brand" href="#">Neil Restro</a>
+
+                <!-- Toggle Button (for mobile) -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Center Menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3"><a class="nav-link active" href="index.html">HOME</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" href="about.html">ABOUT</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" href="contact.html">BOOK TABLE</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Icons and Button -->
+                <div class="btn-icon">
+                    <div class="icons d-flex align-items-center">
+                        <i class="bi bi-person-fill px-2"></i>
+                        <i class="bi bi-bag-dash-fill px-2"></i>
+                        <i class="bi bi-search px-2"></i>
+                        <button type="button" class="btn btn-warning rounded-5">Order Online</button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+   
+
+    
+
+
+    <!-- CONTACT SECTION -->
+
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-6">
+                <h3>Book A Table</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>How Many Persons</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Now</button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="col-12 col-lg-6">
+                <h3>Find Us</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9072693453672!2d73.19132297374017!3d19.199252148094537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7937a77d5c999%3A0x345d0b3a0e1e9fc0!2sRadhe%20Govind%20Nagar%2C%20Shiv%20Shakti%20Nagar%2C%20Ambernath%2C%20Maharashtra%20421501!5e0!3m2!1sen!2sin!4v1759505528176!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Testimonial Section -->
+        <!-- Add this inside your <body> -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row g-4">
+
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">
+                                "Bootstrap made my website development so fast and easy. Highly recommend!"
+                            </p>
+                            <!-- <img src="" class="rounded-circle mx-auto d-block border" alt="User"> -->
+                            <h6 class="mt-2">John Doe</h6>
+                            <small class="text-muted">Web Developer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">
+                                "I love Bootstrap’s responsive design. My site looks perfect on all devices!"
+                            </p>
+                            <!-- <img src="https://via.placeholder.com/80" class="rounded-circle mx-auto d-block border" alt="User"> -->
+                            <h6 class="mt-2">Jane Smith</h6>
+                            <small class="text-muted">UI/UX Designer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">
+                                "Best framework for responsive design! Saved me hours of coding."
+                            </p>
+                            <!-- <img src="https://via.placeholder.com/80" class="rounded-circle mx-auto d-block border" alt="User"> -->
+                            <h6 class="mt-2">Alex Johnson</h6>
+                            <small class="text-muted">Freelancer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Section -->
+
+                <div class="container ">
+                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                                <svg class="bi" width="30" height="24">
+                                    <use xlink:href="#bootstrap"></use>
+                                </svg>
+                            </a>
+                            <span class="mb-3 mb-md-0 text-muted">© 2019 NeilRestro, Inc</span>
+                        </div>
+                        <div class="col-md-5 offset-md-1 mb-3">
+                            <form>
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
+
+
+   
